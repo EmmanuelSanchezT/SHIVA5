@@ -1,0 +1,808 @@
+
+:root {
+    --color_primario-rojo: hsl(356, 63%, 55%);
+    --color_primario-gris: hsl(0, 0%, 66%);
+    --color_secundario-negro: hsl(0, 0%, 0%);
+    --color_secundario-blanco: hsl(0, 0%, 100%);
+}
+
+@font-face {
+    font-family: "HIKOU-OUTLINE";
+    src: url(./Fonts/Hikou-Outline.woff2) format("woff2")
+    url(./Fonts/Hikou-Outline.ttf) format("truetype")
+    url(./Fonts/Hikou\ Outline.otf) format("open type");
+}
+
+@font-face {
+    font-family: "HIKOU-REGULAR";
+    src: url(./Fonts/Hikou-Regular.woff2) format("woff2")
+    url(./Fonts/Hikou-Regular.ttf) format("truetype")
+    url(./Fonts/Hikou\ Regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "MYRIADPRO-LIGHT";
+    src: 
+    url(./Fonts/Myriad-Pro-Light.woff2) format("woff2")
+    url(./Fonts/Myriad-Pro-Light.ttf) format("truetype")
+    url(./Fonts/Myriad\ Pro\ Light.otf) format("open type");
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    position: relative;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*Encabezado*/
+
+.Encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color_secundario-blanco);
+    height: 208px ;
+    width: 100%;
+}
+
+.Logo{
+    bottom: center;
+    padding-left: 8%;
+}
+
+.menu{
+    display: flex;
+    padding-right: 22%;
+    gap: 31%;
+}
+
+a.DESCÚBRENOS{
+    text-decoration: none;
+    color: var(--color_secundario-negro);
+    font-size: 14pt;
+    font-family: 'HIKOU-REGULAR', 'Anton', sans-serif;
+    font-weight: 600;
+    align-content: center;
+}
+
+a.WEBERLY_POLICE{
+    text-decoration: none;
+    color: var(--color_secundario-negro);
+    font-size: 14pt;
+    font-family:'HIKOU-REGULAR', 'Anton', sans-serif;
+    font-weight: 600;
+    align-content: center;
+    text-align: center;
+}
+
+a.JUGUEMOS{
+    text-decoration: none;
+    color: var(--color_secundario-negro);
+    font-size: 14pt;
+    font-family:'HIKOU-REGULAR', 'Anton', sans-serif;
+    font-weight: 600;
+    align-content: center;
+}
+
+a.DESCÚBRENOS:active{
+    display: flex;
+    align-items: center;
+    color: var(--color_secundario-blanco);
+    background: var(--color_secundario-negro);
+    border-radius: 15px;
+}
+
+a.WEBERLY_POLICE:active{
+    display: flex;
+    align-items: center;
+    color: var(--color_secundario-blanco);
+    background: var(--color_secundario-negro);
+    border-radius: 15px;
+}
+
+a.JUGUEMOS:active{
+    display: flex;
+    align-items: center;
+    color: var(--color_secundario-blanco);
+    background: var(--color_secundario-negro);
+    border-radius: 15px;
+}
+
+.btn_1{
+    background: none;
+}
+
+.btn_2{
+    background: none;
+}
+
+.btn_3{
+    background: none;
+}
+
+/*2da sección*/
+
+.pag_bienvenida{
+    background: var(--color_secundario-negro);
+    height: 690px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+}
+
+.img_bienvenida{
+    margin: auto;
+}
+
+/*3ra sección*/
+
+.pag_quiensoy{
+    background: var(--color_secundario-blanco);
+    width: 100%;
+    height: 900px;
+    justify-content: center;
+}
+
+.subtitulo1{
+    left: 28%;
+    font-size: 23pt;
+    font-family: 'HIKOU-OUTLINE', fantasy;
+    color: #d6474f;
+    top: 2%;
+}
+
+.texto1{
+    position: inherit;
+    font-family: 'MYRIADPRO-LIGHT', Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    left: 28%;
+    top: 6%;
+    text-align: justify;
+    width: 26%;
+}
+
+.img_Emmanuel{
+    position: absolute;
+    display: flex;
+    left: 55%;
+    top: 11%;
+}
+
+.texto2{
+    font-family: 'MYRIADPRO-LIGHT', Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    left: 28%;
+    top: 10%;
+    text-align: justify;
+    width: 44%;
+    position: inherit;
+}
+
+.cajadelanuncio{
+    position: inherit;
+    top: 15%;
+    right: -36%;
+}
+
+/*4ta sección*/
+
+.pag_video{
+    display: flex;
+    background: var(--color_primario-gris);
+    height: 654px;
+    width: 100%;
+}
+
+.video{
+    left: 72%;
+    top: 6%;
+}
+
+.btn_configuracion{
+    display: flex;
+    left: -300%;
+    top: 9%; 
+    cursor: pointer;
+}
+
+.btn_iniciar{
+    display: flex;
+    left:220%;
+    top: 36%; 
+    cursor: pointer;
+}
+
+.btn_pausa{
+    display: flex;
+    left:780%;
+    top: 68%; 
+    cursor: pointer;
+}
+
+.barradesonido{
+    display: flex;
+    left: 780%;
+    top: 6%;
+}
+
+/*5ta sección*/
+
+.pag_personaje{
+    display: flexbox;
+    height: 1110px ;
+    width: 100%;
+}
+
+.deco_lineaiz{
+    display: flex;
+    top: 20px;
+}
+
+.deco_circuloiz{
+    top: -514px;
+    left: 251px;
+    display: flex;
+}
+
+.personaje{
+    display: flex;
+    left: 28%;
+    top: -40%;
+}
+
+.subtitulo2{
+    display: flex;
+    font-size: 23pt;
+    font-family: 'HIKOU-OUTLINE', fantasy;
+    color: var(--color_primario-rojo);
+    left: 41%;
+    top: -106%;
+}
+
+.texto3{
+    display: flex;
+    font-family: 'MYRIADPRO-LIGHT', Arial, Helvetica, sans-serif;
+    font-size: 19pt;
+    left:41% ;
+    top: -105%;
+    text-align: justify;
+    width: 750px;
+}
+
+.subtitulo3{
+    display: flex;
+    font-size: 23pt;
+    font-family: 'HIKOU-OUTLINE', fantasy;
+    color: var(--color_primario-rojo);
+    left: 41%;
+    top: -104%;
+}
+
+.texto4{
+    display: flex;
+    font-family: 'MYRIADPRO-LIGHT', Arial, Helvetica, sans-serif;
+    font-size: 19pt;
+    left: 41%;
+    top: -103%;
+    text-align: justify;
+    width: 750px;
+}
+
+.subtitulo4{
+    display: flex;
+    font-size: 23pt;
+    font-family: 'HIKOU-OUTLINE', fantasy;
+    color: var(--color_primario-rojo);
+    left: 28%;
+    top: -100%;
+}
+
+.texto5{
+    display: flex;
+    font-family: 'MYRIADPRO-LIGHT', Arial, Helvetica, sans-serif;
+    font-size: 19pt;
+    left: 28%;
+    top: -99%;
+}
+
+.deco_lineade{
+    display: flex;
+    left: 88%;
+    bottom: 1600px;
+}
+
+.deco_circulode{
+    display: flex;
+    left: 90%;
+    bottom: 1878px;
+}
+
+/*6ta sección*/
+ 
+.pag_comojugar{
+    width: 100%;
+    height: 79px;
+    background: var(--color_secundario-negro);
+}
+
+.titulo1{
+    height: 79px;
+    display: flex;
+    align-items: center;
+    color: var(--color_secundario-blanco);
+    font-size: 39pt;
+    font-family: 'HIKOU-REGULAR', 'Anton', sans-serif ;
+    margin-left: 42%;
+}
+
+.pag_comojugar2{
+    width: 100%;
+    height: 626px;
+}
+
+.images_infografia{
+    display: flex;
+    top: 4%;
+    right:-27.5%;
+    
+}
+
+.infografia2{
+    margin-left: 30px;
+}
+
+.infografia3{
+    margin-left: 30px;
+}
+
+.subtitulo5{
+    display: flex;
+    left: 41%;
+    top: 5%;
+    font-size: 23pt;
+    font-family: 'HIKOU-OUTLINE', fantasy;
+    color: var(--color_primario-rojo);
+}
+
+.texto6{
+    display: flex;
+    font-family: 'MYRIADPRO-LIGHT', Arial, Helvetica, sans-serif;
+    font-size: 17pt;
+    left: 41%;
+    top: 6%;
+    text-align: justify;
+    width: 458px;
+}
+
+.img_secciones{
+    display: flex;
+    top: 49px;
+    left: 45%;
+}
+
+/*7ma sección*/
+
+.pag_juguemos{
+    width: 100%;
+    height: 821px;
+    align-items: center;
+    margin-top: 60px;
+    display:flex;
+}
+
+.muro{
+    margin: auto;
+}
+
+.pag_juguemos2{
+    display: flex;
+    width: 100%;
+    margin-left: 475px;
+    margin-top: -415px;
+    align-items: center;
+}
+
+.btn1{
+    font-size: 14pt;
+    font-family: 'Anton', sans-serif;
+    background: var(--color_primario-rojo);
+    border: none;
+    border-radius: 20px;
+    height: 79px;
+    width: 456px;
+    align-items: center;
+    font-weight: 600;
+    left: 132%;
+}
+
+.linea{
+    width: 100%;
+    height: 5px;
+    background-color: var(--color_secundario-negro);
+    margin-top: 353px;
+}
+
+/*Pie de página*/
+
+.pag_piedepagina{
+    display: flex;
+    width: 100%;
+    height: 166px;
+}
+
+.grid1{
+    display: flex;
+    left: 20%;
+    align-items: center;
+    height: 166px;
+    width: 1440px;
+}
+
+.correo{
+    margin-left: 180px;
+}
+
+.correo_info{
+    margin-left: 30px;  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17pt;
+}
+
+.facebook{
+    margin-left: 180px;
+}
+
+.instagram{
+    margin-left: 84px;
+}
+
+.youtube{
+    margin-left: 84px;
+}
+
+.logo2{
+    margin-left: 124px;
+    margin-right: 122px;
+}
+
+@media screen and (max-width: 1440px) {
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    /*3ra sección*/
+    
+    .pag_quiensoy{
+        background: var(--color_secundario-blanco);
+        width: 100%;
+        height: 900px;
+        justify-content: center;
+    }
+    
+    .subtitulo1{
+        left: 8.5%;
+        font-size: 23pt;
+        font-family: 'HIKOU-OUTLINE', fantasy;
+        color: #d6474f;
+        top: 2%;
+    }
+    
+    .texto1{
+        position: inherit;
+        font-family: 'MYRIADPRO-LIGHT', Arial, Helvetica, sans-serif;
+        font-size: 20pt;
+        left: 8.5%;
+        top: 6%;
+        text-align: justify;
+        width: 48%;
+    }
+    
+    .img_Emmanuel{
+        position: absolute;
+        display: flex;
+        left: 59.5%;
+        top: 11%;
+    }
+    
+    .texto2{
+        font-family: 'MYRIADPRO-LIGHT', Arial, Helvetica, sans-serif;
+        font-size: 20pt;
+        left: 8.5%;
+        top: 10%;
+        text-align: justify;
+        width: 82.8%;
+        position: inherit;
+    }
+    
+    .cajadelanuncio{
+        position: inherit;
+        top: 15%;
+        right: -23%;
+    }
+    
+    /*4ta sección*/
+    
+    .pag_video{
+        display: flex;
+        background: var(--color_primario-gris);
+        height: 654px;
+        width: 100%;
+    }
+    
+    .video{
+        left: 12%;
+        top: 6%;
+    }
+    
+    .btn_configuracion{
+        display: flex;
+        left: -1020%;
+        top: 10%; 
+        cursor: pointer;
+    }
+    
+    .btn_iniciar{
+        display: flex;
+        left:-500%;
+        top: 36%; 
+        cursor: pointer;
+    }
+    
+    .btn_pausa{
+        display: flex;
+        left:60%;
+        top: 68%; 
+        cursor: pointer;
+    }
+    
+    .barradesonido{
+        display: flex;
+        left: 70%;
+        top: 6%;
+    }
+    
+    /*5ta sección*/
+    
+    .pag_personaje{
+        display: flexbox;
+        height: 1110px ;
+        width: 100%;
+    }
+    
+    .deco_lineaiz{
+        display: flex;
+        top: 20px;
+    }
+    
+    .deco_circuloiz{
+        top: -514px;
+        left: 251px;
+        display: flex;
+    }
+    
+    .personaje{
+        display: flex;
+        left: 12%;
+        top: -45%;
+    }
+    
+    .subtitulo2{
+        display: flex;
+        font-size: 23pt;
+        font-family: 'HIKOU-OUTLINE', fantasy;
+        color: var(--color_primario-rojo);
+        left: 35.8%;
+        top: -110.5%;
+    }
+    
+    .texto3{
+        display: flex;
+        font-family: 'MYRIADPRO-LIGHT', Arial, Helvetica, sans-serif;
+        font-size: 19pt;
+        left:35.8% ;
+        top: -110%;
+        text-align: justify;
+        width: 677px;
+    }
+    
+    .subtitulo3{
+        display: flex;
+        font-size: 23pt;
+        font-family: 'HIKOU-OUTLINE', fantasy;
+        color: var(--color_primario-rojo);
+        left: 35.8%;
+        top: -109.5%;
+    }
+    
+    .texto4{
+        display: flex;
+        font-family: 'MYRIADPRO-LIGHT', Arial, Helvetica, sans-serif;
+        font-size: 19pt;
+        left: 35.8%;
+        top: -109%;
+        text-align: justify;
+        width: 677px;
+    }
+    
+    .subtitulo4{
+        display: flex;
+        font-size: 23pt;
+        font-family: 'HIKOU-OUTLINE', fantasy;
+        color: var(--color_primario-rojo);
+        left: 17.8%;
+        top: -108%;
+    }
+    
+    .texto5{
+        display: flex;
+        font-family: 'MYRIADPRO-LIGHT', Arial, Helvetica, sans-serif;
+        font-size: 19pt;
+        left: 17.8%;
+        top: -107%;
+    }
+    
+    .deco_lineade{
+        display: flex;
+        left: 76.7%;
+        bottom: 102rem;
+    }
+    
+    .deco_circulode{
+        display: flex;
+        left: 80%;
+        bottom: 120rem;
+    }
+    
+    /*6ta sección*/
+     
+    .pag_comojugar{
+        width: 100%;
+        height: 4.8rem;
+        background: var(--color_secundario-negro);
+    }
+    
+    .titulo1{
+        height: 79px;
+        display: flex;
+        align-items: center;
+        color: var(--color_secundario-blanco);
+        font-size: 39pt;
+        font-family: 'HIKOU-REGULAR', 'Anton', sans-serif ;
+        margin-left: 42%;
+    }
+    
+    .pag_comojugar2{
+        width: 100%;
+        height: 40rem;
+    }
+    
+    .images_infografia{
+        display: flex;
+        top: 4%;
+        right:-9%;
+        
+    }
+    
+    .infografia2{
+        margin-left: 30px;
+    }
+    
+    .infografia3{
+        margin-left: 30px;
+    }
+    
+    .subtitulo5{
+        display: flex;
+        left: 34.4%;
+        top: 5%;
+        font-size: 23pt;
+        font-family: 'HIKOU-OUTLINE', fantasy;
+        color: var(--color_primario-rojo);
+    }
+    
+    .texto6{
+        display: flex;
+        font-family: 'MYRIADPRO-LIGHT', Arial, Helvetica, sans-serif;
+        font-size: 17pt;
+        left: 34.4%;
+        top: 6%;
+        text-align: justify;
+        width: 458px;
+    }
+    
+    .img_secciones{
+        display: flex;
+        top: 4.5rem;
+        left: 43%;
+    }
+    
+    /*7ma sección*/
+    
+    .pag_juguemos{
+        width: 100%;
+        height: 53rem;
+        align-items: center;
+        display:flex;
+        margin: auto;
+    }
+    
+    .pag_juguemos2{
+        display: flex;
+        width: 100%;
+        left: -37%;
+        top: 10%;
+        align-items: center;
+    }
+    
+    .btn1{
+        font-size: 14pt;
+        font-family: 'Anton', sans-serif;
+        background: var(--color_primario-rojo);
+        border: none;
+        border-radius: 20px;
+        height: 79px;
+        width: 456px;
+        align-items: center;
+        font-weight: 600;
+    }
+    
+    .linea{
+        width: 100%;
+        height: 5px;
+        background-color: var(--color_secundario-negro);
+        margin-top: 353px;
+    }
+    
+    /*Pie de página*/
+    
+    .pag_piedepagina{
+        display: flex;
+        width: 100%;
+        height: 166px;
+    }
+    
+    .grid1{
+        display: flex;
+        left: -2%;
+        align-items: center;
+        height: 166px;
+        width: 1440px;
+    }
+    
+    .correo{
+        margin-left: 180px;
+    }
+    
+    .correo_info{
+        margin-left: 30px;  
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17pt;
+    }
+    
+    .facebook{
+        margin-left: 180px;
+    }
+    
+    .instagram{
+        margin-left: 84px;
+    }
+    
+    .youtube{
+        margin-left: 84px;
+    }
+    
+    .logo2{
+        margin-left: 124px;
+        margin-right: 122px;
+    }
+    
+     }
